@@ -1,0 +1,68 @@
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  a { 
+    color: hsl(228, 45%, 44%); 
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Public Sans Light';
+  color: $dark-blue;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.1;
+}
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+h3{
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+p, li {
+  font-family: 'Public Sans';
+}
+
+p{
+  color: $grayish-blue;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.img--icon{
+  text-align: center;
+  display: block;
+  margin: 10px auto 25px;
+}
+
+.align-center{
+  margin-bottom: 30px;
+  display: block;
+  svg{
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.logo-white{
+  svg{
+    #logo{
+      fill: $white;
+    }
+  }
+}
+
+.media-icon{
+  width: 25px;
+  margin: 0 8px;
+}

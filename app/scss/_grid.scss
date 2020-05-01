@@ -1,0 +1,21 @@
+.row{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i}{
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  @for $i from 1 through 12 {
+    .col-#{$i}{
+      width: 100% / $i;
+    }
+  }
+}
