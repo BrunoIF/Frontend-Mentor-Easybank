@@ -1,4 +1,8 @@
 
+body{
+  overflow-x: hidden;
+}
+
 .attribution { 
   font-size: 11px; 
   text-align: center; 
@@ -65,4 +69,42 @@ p{
 .media-icon{
   width: 25px;
   margin: 0 8px;
+}
+
+@include desktop{
+  h1, h2, h3, h4 {
+    text-align: left;
+  }
+
+  h1{
+    font-size: 45px;
+  }
+
+  h2{
+    font-size: 35px
+  }
+
+  h3{
+    font-size: 25px;
+  }
+
+  p{
+    text-align: left;
+  }
+
+  .img--icon{
+    margin-left: 0;
+  }
+
+  .align-center{
+    svg{
+      margin-left: 0;
+    }
+  }
+
+  .media-icon{
+    &:first-child{
+      margin-left: 0;
+    }
+  }
 }

@@ -1,12 +1,14 @@
 .button{
   $gradient: linear-gradient(130deg, ($lime-green 0%), ($bright-cyan 100%));
-  padding: 15px 35px;
+  padding: 12px 35px;
   border-radius: 30px;
   font-family: 'Public Sans';
   border: none;
   background: $gradient;
   color: $white;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
   &--desktop{
     display: none;
   }
@@ -14,8 +16,38 @@
     margin: 30px auto 0;
     display: block;
   }
-  &:hover{
-    transition: .5s;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     background: linear-gradient(130deg, (lighten($lime-green, 20%) 0%), (lighten($bright-cyan, 20%) 100%));
+    opacity: 0;
+    z-index: -1;
+    height: 100%;
+    border-radius: 30px;
+  }
+  &:hover{
+    &:before{
+      transition: .4s;
+      opacity: 1;
+    }
+  }
+}
+
+@include desktop{
+  .button{
+    &--center{
+      margin-left: 0;
+    }
+    &--desktop{
+      display: block;
+    }
+    &--footer{
+      margin-top: 0;
+      margin-right: 0;
+      margin-left: auto;
+    }
   }
 }
