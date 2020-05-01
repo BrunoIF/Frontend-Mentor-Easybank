@@ -18,12 +18,12 @@
 
   <div class="nav">
     <img src="images/logo.svg" alt="Logo">
-    <div class="nav__icon">
+    <div class="nav__icon" id="menu-icon">
       <div class="nav__icon-line"></div>
       <div class="nav__icon-line"></div>
       <div class="nav__icon-line"></div>
     </div>
-    <ul class="nav__list">
+    <ul class="nav__list" id="menu-list">
       <li>Home</li>
       <li>About</li>
       <li>Contact</li>
@@ -34,6 +34,8 @@
       Request Invite
     </button>
   </div>
+  <div class="nav__overlay" id="menu-overlay"></div>
+
 
   <div class="container container--white">
     <div class="container__layer-container">
@@ -201,6 +203,8 @@
     </div>
   </div>
 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
   <!--build:js js/main.min.js -->
   <script src="js/main.js"></script>
   <!-- endbuild -->
