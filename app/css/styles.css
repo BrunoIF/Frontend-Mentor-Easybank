@@ -171,6 +171,25 @@ p {
     .nav__icon, .nav__overlay {
       display: none; } }
 
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 3;
+  background: radial-gradient(#fafafa 0%, #d6d9e1 100%); }
+  .loading__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.7); }
+
+@media screen and (min-width: 1440px) {
+  .loading__logo {
+    transform: translate(-50%, -50%) scale(2.3); } }
+
 .button {
   padding: 12px 35px;
   border-radius: 30px;

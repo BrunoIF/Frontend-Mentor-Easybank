@@ -4,8 +4,12 @@ var menuLines = document.querySelectorAll('#menu-icon .nav__icon-line')
 var menuOverlay = document.getElementById('menu-overlay')
 var isOpen = false
 
+var body = document.querySelector('body')
 
-window.onload = () => console.log('ready')
+
+body.style.overflowY = "hidden"
+
+window.onload = () => docReady()
 
 
 menuButton.addEventListener('click', () => {
@@ -41,4 +45,16 @@ const closeMenu = () => {
     .to(menuLines[2], .3, {y: 0, ease: Power1.easeOut}, 'a+=.2')
     .to(menuLines[0], .3, {y: 0, ease: Power1.easeOut}, 'a+=.2')
     .set(menuLines[1], {autoAlpha: 1}, 'a')
+}
+
+
+const docReady = () => {
+  
+  var tl = new TimelineMax()
+
+  .staggerFrom('#logo-stripe > path', .5, {autoAlpha: 0}, .3)
+  .from('#logo-stripe', 1, {x: '70px', ease: Power1.easeOut}, 'a')
+  .from('#logo', 1, {autoAlpha: 0, y: '3%'}, 'a+=.2')
+  .to('.loading', .5, { autoAlpha: 0, delay: .7}, 'end')
+  .set(body, {overflowY: 'auto'}, 'end+=.1')
 }
