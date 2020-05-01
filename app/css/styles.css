@@ -57,8 +57,12 @@ p {
   fill: white; }
 
 .media-icon {
-  width: 25px;
-  margin: 0 8px; }
+  font-size: 25px;
+  margin: 0 10px;
+  cursor: pointer; }
+  .media-icon:hover {
+    color: #31d35c;
+    transition: .4s; }
 
 @media screen and (min-width: 1440px) {
   h1, h2, h3, h4 {
@@ -266,7 +270,7 @@ p {
   .container__content {
     padding: 120px 160px; }
   .container--header {
-    padding: 200px 160px; }
+    padding: 220px 160px; }
   .container__layer-container {
     width: 80%;
     position: absolute;
