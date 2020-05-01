@@ -1,5 +1,16 @@
-# Gulp Starter for CSS Tricks Tutorial  
+# Easybank Landing Page from Frontend Mentor
 
-This repo is a gulp starter for this CSS Tricks tutorial. 
+Challenge from [Frontend Mentor](https://www.frontendmentor.io/)
 
-Remember to do run the `npm install` command after cloning this repo :) 
+Tried a mobile-first approach for this project. I used SCSS and GreenSock for some basic animations.
+
+## Getting Started
+In order to run or build the project, install the dependencies by using `npm install`.
+
+## Running the project
+
+To run the project, use `gulp` on the command line.
+
+## Building the project
+
+To build the project, use `gulp build`
